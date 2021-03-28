@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>{% block title  %}{% endblock %}</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src='main.js'></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{{ url_for('index')}}">Event</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">New Participant</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+      <div class="container">
+          <div class="row">
+           <div class="col-8 mx-auto">
+            <style>
+        input{
+            width: 15cm;
+            height: 1cm;
+        }
+        
+    </style>
+   <h1>add new member</h1>
+   <form action="#" method="POST">
+       <div class="form.group">
+           <label>Name</label>
+           <br>
+           <input type="text" name="name">
+           <br>
+           <label>Score</label>
+           <br>
+           <input type="text" name="number">
+           <br>
+       </div>
+       <br>
+
+       <button class="btn btn-primary">Submit</button>
+   </form>
+           </div>
+              
+          </div>
+      </div>    
+</body>
+</html>
+

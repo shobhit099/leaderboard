@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Evnets {% endblock %}
+
+{% block content %}
+<style>
+    .card{
+        display: block;
+    }
+</style>
+<h1>Events</h1>
+{% for post in pages.items %}
+    {% include 'card.html' %}
+    <br>
+{% endfor %}
+
+{% endblock %}
